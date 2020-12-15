@@ -20,12 +20,6 @@ class BillSetupTaskApplicationTests {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(this.dataSource);
 		int result = jdbcTemplate.queryForObject(
 				"SELECT COUNT(*) FROM BILL_STATEMENTS", Integer.class);
-		
-		
-		System.out.println("Hellop");
-		
-		
-		//assertThat(result).isEqualTo(0);
 	}
 
 }
